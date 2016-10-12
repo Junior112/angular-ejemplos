@@ -1,0 +1,26 @@
+<html ng-app="app-factories">
+    <head>
+        <script src='https://code.angularjs.org/1.5.8/angular.min.js'></script>
+        <script src="factory.js"></script>
+    </head>
+    <body>
+        <div ng-controller="factoryCtrl as ctrl">
+            <table>
+                <thead>
+                    <tr>
+                        <td><b>Nombre</b></td>
+                        <td><b>Edad</b></td>
+                        <td><b>Direc</b></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in ctrl.data">
+                        <td>{{item.nombre}}</td>
+                        <td>{{item.edad}}</td>
+                        <td>{{item.direccion}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

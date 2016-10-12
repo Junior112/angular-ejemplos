@@ -1,0 +1,16 @@
+<html ng-app="app-controllers">
+    <head>
+        <script src='https://code.angularjs.org/1.5.8/angular.min.js'></script>
+        <script src='controller.js'></script>
+    </head>
+    <body>
+        <div ng-controller="controller1 as ctrl">
+            <div>{{ctrl.title}}</div>
+            <div>{{subtitle}}</div>
+        </div>
+        <br>
+        <div ng-controller="_controller1">
+            <div>{{title}}</div>
+        </div>
+    </body>
+</html>
