@@ -1,0 +1,18 @@
+<html ng-app="app-concepts">
+    <head>
+        <script src='https://code.angularjs.org/1.5.8/angular.min.js'></script>
+        <script src='concepts.js'></script>
+    </head>
+    <body>
+        <div ng-controller="controller2 as ctrl">
+            <div>{{name}}</div>
+        </div>
+        <br>
+        <div ng-controller="_controller2">
+            <div>{{name}}</div>
+        </div>
+        <div ng-controller="_controller3">
+            <div id="nombre">{{name}}</div>
+        </div>
+    </body>
+</html>
